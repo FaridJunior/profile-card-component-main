@@ -6,13 +6,6 @@
   box-sizing: border-box;
 }
 
-* {
-  color: hsl(185, 75%, 39%); /*Dark cyan*/
-  color: hsl(227, 10%, 46%); /* Dark grayish blue */
-  color: hsl(0, 0%, 59%); /* Dark gray: */
-  color: hsl(229, 23%, 23%); /* dark desaturated*/
-}
-
 body {
   font-family: "Kumbh Sans", sans-serif;
   height: 100vh;
