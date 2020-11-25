@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+  color: hsl(185, 75%, 39%); /*Dark cyan*/
+  color: hsl(227, 10%, 46%); /* Dark grayish blue */
+  color: hsl(0, 0%, 59%); /* Dark gray: */
+  color: hsl(229, 23%, 23%); /* dark desaturated*/
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-img:nth-child(1) {
+  top: -60%;
+  left: -20%;
+}
+
+.bg-img:nth-child(2) {
+  bottom: -120%;
+  right: -20%;
+}
+
+.card {
+  margin: 120px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 327px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.header {
+  position: relative;
+  height: 130px;
+  background-image: url("./images/bg-pattern-card.svg");
+  display: flex;
+  justify-content: center;
+}
+
+img.profile-img {
+  position: absolute;
+  bottom: -40%;
+  display: inline-block;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.info {
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info,
+.info-item {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info .personal-info {
+  padding: 60px 0px 20px 0px;
+  flex: 5;
+  border-bottom: 0.5px solid hsla(0, 0%, 59%, 0.247);
+}
+.info .account-info {
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+}
+
+.info .personal-info h1 {
+  font-size: 18px;
+}
+
+.info .personal-info h2 {
+  color: hsl(227, 10%, 46%); /* Dark grayish blue */
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.info .personal-info h1 span {
+  color: hsl(227, 10%, 46%); /* Dark grayish blue */
+  font-weight: 400;
+  padding-left: 6px;
+}
+
+.info-item {
+  padding: 15px 0px;
+}
+.info-item .number {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info-item .item-type {
+  font-size: 12px;
+  color: hsl(227, 10%, 46%);
+}
